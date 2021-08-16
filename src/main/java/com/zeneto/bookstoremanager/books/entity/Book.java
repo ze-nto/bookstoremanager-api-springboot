@@ -1,6 +1,7 @@
 package com.zeneto.bookstoremanager.books.entity;
 
 import com.zeneto.bookstoremanager.author.entity.Author;
+import com.zeneto.bookstoremanager.entity.Auditable;
 import com.zeneto.bookstoremanager.publishers.entity.Publisher;
 import com.zeneto.bookstoremanager.users.entity.User;
 import lombok.Data;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class Book {
+public class Book extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
