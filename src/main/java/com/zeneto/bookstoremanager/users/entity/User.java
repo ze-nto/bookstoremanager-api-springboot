@@ -1,6 +1,7 @@
 package com.zeneto.bookstoremanager.users.entity;
 
 import com.zeneto.bookstoremanager.books.entity.Book;
+import com.zeneto.bookstoremanager.entity.Auditable;
 import com.zeneto.bookstoremanager.users.enums.Gender;
 import lombok.Data;
 
@@ -11,7 +12,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class User {
+public class User extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
