@@ -67,7 +67,7 @@ public class BookStoreExceptionHandler extends ResponseEntityExceptionHandler {
         return buildResponseEntity(
                 HttpStatus.BAD_REQUEST,
                 "Malformed JSON body and/or field with error",
-                Collections.singletonList(exception.getLocalizedMessage()))
+                Collections.singletonList(exception.getLocalizedMessage()));
     }
 
 
